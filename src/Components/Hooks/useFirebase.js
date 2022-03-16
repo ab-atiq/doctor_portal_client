@@ -97,7 +97,7 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unSubscribe;
-    }, [])
+    }, [auth])
 
     // admin check
     useEffect(() => {

@@ -97,7 +97,7 @@ export default function Dashboard() {
     const [open, setOpen] = React.useState(false);
     const { isAdmin } = useAuth();
 
-    console.log(isAdmin);
+    // console.log(isAdmin);
 
     const handleDrawerOpen = () => {
         setOpen(true);

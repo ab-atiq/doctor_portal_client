@@ -29,7 +29,7 @@ const Appointments = ({ date }) => {
             .then(data => setAppointments(data));
     }, [newDate, user.email, token])
 
-    console.log(newDate, appointments);
+    // console.log(newDate, appointments);
 
     return (
         <Box>

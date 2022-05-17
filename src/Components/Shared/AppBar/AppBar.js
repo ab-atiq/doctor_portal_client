@@ -100,17 +100,24 @@ const ResponsiveAppBar = () => {
                   </NavLink>
                 </Typography>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              {/* <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
                   <NavLink to="/services" className={classes.decorationNone}>
                     Dental Services
                   </NavLink>
                 </Typography>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              </MenuItem> */}
+              {/* <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
                   <NavLink to="/reviews" className={classes.decorationNone}>
                     Reviews
+                  </NavLink>
+                </Typography>
+              </MenuItem> */}
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <NavLink to="/course" className={classes.decorationNone}>
+                    Course
                   </NavLink>
                 </Typography>
               </MenuItem>
@@ -121,13 +128,13 @@ const ResponsiveAppBar = () => {
                   </NavLink>
                 </Typography>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              {/* <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">
                   <NavLink to="/contact" className={classes.decorationNone}>
                     Contact Us
                   </NavLink>
                 </Typography>
-              </MenuItem>
+              </MenuItem> */}
             </Menu>
           </Box>
           <Typography
@@ -169,7 +176,7 @@ const ResponsiveAppBar = () => {
                 </NavLink>
               </Typography>
             </Button>
-            <Button
+            {/* <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
@@ -178,14 +185,24 @@ const ResponsiveAppBar = () => {
                   Dental Services
                 </NavLink>
               </Typography>
-            </Button>
-            <Button
+            </Button> */}
+            {/* <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               <Typography textAlign="center">
                 <NavLink to="/reviews" className={classes.navLink}>
                   Reviews
+                </NavLink>
+              </Typography>
+            </Button> */}
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              <Typography textAlign="center">
+                <NavLink to="/course" className={classes.navLink}>
+                  Course
                 </NavLink>
               </Typography>
             </Button>
@@ -199,7 +216,7 @@ const ResponsiveAppBar = () => {
                 </NavLink>
               </Typography>
             </Button>
-            <Button
+            {/* <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
@@ -208,7 +225,7 @@ const ResponsiveAppBar = () => {
                   Contact Us
                 </NavLink>
               </Typography>
-            </Button>
+            </Button> */}
           </Box>
 
           <Box sx={{ flexGrow: 0, display: "flex" }}>

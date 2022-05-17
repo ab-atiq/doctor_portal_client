@@ -14,7 +14,7 @@ const OurDoctorHome = () => {
       <Grid container spacing={3}>
         <Grid item xs={4}>
           <img
-            style={{ width: 400 }}
+            style={{ width: "100%" }}
             src="https://i.ibb.co/YjFx57N/doctor-small.png"
             alt=""
           />
@@ -25,7 +25,7 @@ const OurDoctorHome = () => {
         </Grid>
         <Grid item xs={4}>
           <img
-            style={{ width: 400 }}
+            style={{ width: "100%" }}
             src="https://i.ibb.co/YjFx57N/doctor-small.png"
             alt=""
           />
@@ -36,7 +36,7 @@ const OurDoctorHome = () => {
         </Grid>
         <Grid item xs={4}>
           <img
-            style={{ width: 400 }}
+            style={{ width: "100%" }}
             src="https://i.ibb.co/YjFx57N/doctor-small.png"
             alt=""
           />

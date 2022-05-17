@@ -5,6 +5,9 @@ import Appointment from "./Components/Appointment/Appointment";
 import Blogs from "./Components/Blogs/Blogs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import AuthProvider from "./Components/Contexts/AuthProvider/AuthProvider";
+import Course from "./Components/Course/Course";
+import SingleCourse from "./Components/Course/singleCourse/SingleCourse";
+import Video from "./Components/Course/singleCourse/video";
 import AddDoctor from "./Components/Dashboard/AddDoctor/AddDoctor";
 import Dashboard from "./Components/Dashboard/Dashboard/Dashboard";
 import DashboardHome from "./Components/Dashboard/DashboardHome/DashboardHome";
@@ -35,6 +38,30 @@ function App() {
               element={
                 <PrivateRoute>
                   <Appointment />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="course"
+              element={
+                <PrivateRoute>
+                  <Course/>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="course/:name"
+              element={
+                <PrivateRoute>
+                  <SingleCourse/>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="course/video"
+              element={
+                <PrivateRoute>
+                  <Video/>
                 </PrivateRoute>
               }
             />

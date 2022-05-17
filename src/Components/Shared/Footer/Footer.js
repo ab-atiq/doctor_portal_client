@@ -7,7 +7,7 @@ import { Box } from "@mui/system";
 
 const Footer = () => {
   return (
-    <Container sx={{ textAlign: "left", pt: 5 }}>
+    <Box sx={{ textAlign: "left", pt: 5 }}>
       <Grid container spacing={2}>
         <Grid item xs={6} md={3}>
           <Typography
@@ -107,7 +107,7 @@ const Footer = () => {
       <Typography variant="body1" sx={{ textAlign: "center" }}>
         Copyright 2020 All Rights Reserved
       </Typography>
-    </Container>
+    </Box>
   );
 };
 

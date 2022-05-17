@@ -2,7 +2,6 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import { Box, Typography } from "@mui/material";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -39,9 +38,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create("width"),
     width: "100%",
     [theme.breakpoints.up("sm")]: {
-      width: "50ch",
+      width: "30ch",
       "&:focus": {
-        width: "50ch",
+        width: "30ch",
       },
     },
   },
@@ -49,7 +48,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 const SearchLesson = () => {
   return (
-    <Box>
+    <div>
       <Search>
         <SearchIconWrapper>
           <SearchIcon />
@@ -59,44 +58,7 @@ const SearchLesson = () => {
           inputProps={{ "aria-label": "search" }}
         />
       </Search>
-      {/* <Box
-        sx={{
-          height: "100px",
-          maxHeight: "450px",
-          width: "200px",
-          background: "rgba(128,128,128,.15)",
-          position:'absolute',
-          overflow: "scroll",
-          border: "2px solid rgba(128,128,128,.5)",
-          borderRadius: "5px",
-          overflowX: "hidden",
-          "&::-webkit-scrollbar": {
-            width: "0.4em",
-          },
-          "&::-webkit-scrollbar-track": {
-            boxShadow: "inset 0 0 6px rgba(0,0,0,0.00)",
-            webkitBoxShadow: "inset 0 0 6px rgba(0,0,0,0.00)",
-          },
-          "&::-webkit-scrollbar-thumb": {
-            backgroundColor: "rgba(0,0,0,.2)",
-            outline: "1px solid rgba(128,128,128,.55)",
-            borderRadius: "3px",
-          },
-        }}
-        hidden
-      >
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-        <Typography>Atiqur Rahman</Typography>
-      </Box> */}
-    </Box>
+    </div>
   );
 };
 

@@ -8,7 +8,7 @@ const SingleCourse = () => {
 //   const [data, setData] = useState();
 
 //   useEffect(() => {
-//     fetch(`http://localhost:5000/course`)
+//     fetch(`https://doctorportalserver-production.up.railway.app/course`)
 //       .then((res) => res.json())
 //       .then((data) => setData(data[0]?.data));
 //   }, []);

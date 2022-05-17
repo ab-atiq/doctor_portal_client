@@ -18,7 +18,7 @@ const CourseVideo = () => {
   // console.log(videoCompleteId);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/course`)
+    fetch(`https://doctorportalserver-production.up.railway.app/course`)
       .then((res) => res.json())
       .then((data) => setData(data[0]));
   }, []);

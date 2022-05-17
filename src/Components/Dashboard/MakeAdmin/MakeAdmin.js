@@ -14,7 +14,7 @@ const MakeAdmin = () => {
   };
   const handleSubmit = (e) => {
     const user = { admin };
-    fetch("http://localhost:5000/users/admin", {
+    fetch("https://doctorportalserver-production.up.railway.app/users/admin", {
       method: "PUT",
       headers: {
         authorization: `Bearer ${token}`,

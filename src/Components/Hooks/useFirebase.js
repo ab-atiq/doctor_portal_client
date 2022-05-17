@@ -108,7 +108,7 @@ const useFirebase = () => {
 
   // admin check
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user?.email}`)
+    fetch(`https://doctorportalserver-production.up.railway.app/users/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setIsAdmin(data.admin));
   }, [user.email]);
@@ -129,7 +129,7 @@ const useFirebase = () => {
     const user = { email, displayName: name };
     // console.log(user);
 
-    fetch("http://localhost:5000/users", {
+    fetch("https://doctorportalserver-production.up.railway.app/users", {
       method: method,
       headers: {
         "content-type": "application/json",

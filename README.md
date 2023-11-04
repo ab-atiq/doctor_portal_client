@@ -1,2 +1,13 @@
-### Server side deploy on Railway.app
-https://doctorportalserver-production.up.railway.app/
+# How to run this poject
+
+Step-1:
+
+```sh
+npm install
+```
+
+Step-2:
+
+```sh
+npm start
+```

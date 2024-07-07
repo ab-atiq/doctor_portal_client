@@ -18,7 +18,7 @@ const Appointments = ({ date }) => {
 
   useEffect(() => {
     fetch(
-      `https://doctorportalserver-production.up.railway.app/appointments?email=${user.email}&date=${newDate}`,
+      `https://doctor-portal-server-riwf.onrender.com/appointments?email=${user.email}&date=${newDate}`,
       {
         headers: {
           authorization: `Bearer ${token}`,

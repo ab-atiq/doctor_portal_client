@@ -14,7 +14,7 @@ const MakeAdmin = () => {
   };
   const handleSubmit = (e) => {
     const user = { admin };
-    fetch("https://doctorportalserver-production.up.railway.app/users/admin", {
+    fetch("https://doctor-portal-server-riwf.onrender.com/users/admin", {
       method: "PUT",
       headers: {
         authorization: `Bearer ${token}`,

@@ -56,7 +56,7 @@ export default function AppointmentModal({
 
     // send to the server
     // console.log(appointment);
-    fetch("https://doctorportalserver-production.up.railway.app/appointments", {
+    fetch("https://doctor-portal-server-riwf.onrender.com/appointments", {
       method: "POST",
       headers: {
         "content-type": "application/json",

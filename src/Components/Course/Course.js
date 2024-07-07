@@ -10,7 +10,7 @@ const Course = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch(`https://doctorportalserver-production.up.railway.app/course`)
+    fetch(`https://doctor-portal-server-riwf.onrender.com/course`)
       .then((res) => res.json())
       .then((data) => setData(data[0]));
   }, []);
